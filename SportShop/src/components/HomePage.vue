@@ -35,7 +35,7 @@
             <div class="middle">
                 <div class="box">
                     <div class="image-pros">
-                        <img src="../components/image/real madrid.jpg" alt="">
+                       
                         <!-- image -->
 
                     </div>
