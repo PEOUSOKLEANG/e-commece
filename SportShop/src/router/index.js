@@ -6,6 +6,7 @@ import DiscountView from'../views/DiscountView.vue'
 import GoshopView from'../views/GoshopView.vue'
 import NewDropView from'../views/NewDropView.vue'
 import ShoesView from'../views/ShoesView.vue'
+// import SelecteOrder from'../components/SelecteOrder.vue'
 
 
 
@@ -26,7 +27,7 @@ const router = createRouter({
       component: AccessoriesView
     },
     {
-      path: '/clothes',
+      path: '//clothes',
       name: 'clothes',
       component: ClothesView
     },
@@ -36,7 +37,7 @@ const router = createRouter({
       component: DiscountView
     },
     {
-      path: '/goshop',
+      path: '//goshop',
       name: 'goshop',
       component: GoshopView
     },
@@ -52,12 +53,12 @@ const router = createRouter({
     },
     
 
-    // {
-    //   path: '/about',
-    //   name: 'about',
+    {
+      path: '/seclectOrder',
+      name: 'seclectOrder',
       
-    //   component: () => import('../views/AboutView.vue')
-    // }
+      component: () => import('../components/SelecteOrder.vue')
+    }
   ]
 })
 

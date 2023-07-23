@@ -142,6 +142,7 @@
 main {
     width: 100vw;
     height: 100vh;
+   
 }
 
 main .header {
@@ -431,4 +432,6 @@ main .footer {
     transition: 3ms;
 }
 </style>
+
+
   

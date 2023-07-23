@@ -1,2 +1,2 @@
-Hosting URL: https://ecommerse-sportshop.web.app
+Hosting URL:https://e-commece-sportshop.vercel.app/
 Github : https://github.com/PEOUSOKLEANG/e-commece
