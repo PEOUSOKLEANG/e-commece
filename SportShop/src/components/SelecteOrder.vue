@@ -76,8 +76,8 @@
                         <input type="text">
                         <p>RealMadrid Home 23,L,100$</p>
                         <div class="btn-confirm"> 
-                            <button>Cancel</button>
-                            <button>Confirm</button>
+                            <button @click.prevent="goback()">Cancel</button>
+                            <button @click.prevent="payment()">Confirm</button>
                         </div>
                     </div>
                     
@@ -119,6 +119,18 @@
 
     </main>
 </template>
+<script>
+export default{
+    methods:{
+        goback(){
+            this.$router.go(-1);
+        },
+        payment(){
+            this.$router.push({path:'/selectorder/payment'}); 
+        }
+    }
+}
+</script>
 <style>
 main .mid-order {
     width: 100%;

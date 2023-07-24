@@ -66,13 +66,13 @@ const router = createRouter({
     
 
     {
-      path: '/seclectOrder',
+      path: '/selectorder',
       name: 'seclectOrder',
       
       component: () => import('../components/SelecteOrder.vue')
     },
     {
-      path: '/seclectOrder/payment',
+      path: '/selectorder/payment',
       name: 'payment',
       
       component: () => import('../components/Payment.vue')

@@ -29,7 +29,7 @@
         <div class="sub-name">
             <h2>Goshop</h2>
         </div>
-        <div class="produce" >
+        <div @click.prevent="selectorder()" class="produce" >
             <div class="pro-img">
                 <!-- <img src="../components/image/RealMadrid23.png" alt=""> -->
             </div>
@@ -75,6 +75,15 @@
 
     </main>
 </template>
+<script>
+export default{
+    methods:{
+        selectorder(){
+            this.$router.push({path: '/selectorder'});
+        }
+    }
+}
+</script>
 <style>
     main .sub-name{
         margin-left: 50px;
