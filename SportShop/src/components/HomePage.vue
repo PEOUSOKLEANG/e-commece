@@ -37,7 +37,7 @@
 
                     </div>
                     <div>
-                        <span><a href="/goshop">GO SHOP</a></span>
+                        <span><a><router-link to="/goshop">Go Shop</router-link></a></span>
                     </div>
                 </div>
                 <div class="box">
@@ -414,7 +414,7 @@ main .footer {
     border-radius:5px ;
     box-shadow:1px 0.3px 1px .0.3px rgba(89, 106, 195, 0.5); 
     padding: 5px;
-    
+
 }
 .cnt-gmail button{
     box-sizing: border-box;

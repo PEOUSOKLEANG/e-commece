@@ -21,12 +21,15 @@ const router = createRouter({
       name: 'home',
       component: HomeView,
       method:{
-        GoshopView,
-        DiscountView,
-        ClothesView,
-        NewDropView,
-        ShoesView,
-        AccessoriesView
+        goshop(){
+          GoshopView;
+        },
+        promotion(){
+          DiscountView;
+        },
+        Clothes(){
+          ClothesView;
+        },
 
       }
     },
