@@ -31,7 +31,7 @@
         </div>
         <div @click.prevent="selectorder()" class="produce" >
             <div class="pro-img">
-                <!-- <img src="../components/image/RealMadrid23.png" alt=""> -->
+                <img src="../components/image/RealMadrid23.png" alt="">
             </div>
             <li> </li>
 
@@ -81,7 +81,14 @@ export default{
         selectorder(){
             this.$router.push({path: '/selectorder'});
         }
-    }
+    },
+    // data(){
+    //     let url = `http://universities.hipolabs.com/search?country=${country.value}`;
+    //     return {
+            
+    //     }
+
+    // }
 }
 </script>
 <style>

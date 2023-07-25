@@ -8,10 +8,10 @@
                 </div>
             </div>
             <div class="header-center">
-                <a href="#">Home </a>
-                <a href="#">Shop </a>
-                <a href="#">Products </a>
-                <a href="#">Promotion</a>
+                <a><router-link to="/">Home</router-link></a>
+                <a><router-link to="/goshop">Shop</router-link></a>
+                <a><router-link to="/">Products</router-link></a>
+                <a><router-link to="/discount">Promotion</router-link></a>
             </div>
             <div class="header-right">
                 <!-- profile users -->

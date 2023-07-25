@@ -8,15 +8,19 @@
                 </div>
             </div>
             <div class="header-center">
-                <a href="#">Home </a>
-                <a href="#">Shop </a>
-                <a href="#">Products </a>
-                <a href="#">Promotion</a>
+                <a><router-link to="/">Home</router-link></a>
+                <a><router-link to="/goshop">Shop</router-link></a>
+                <a><router-link to="/">Products</router-link></a>
+                <a><router-link to="/discount">Promotion</router-link></a>
             </div>
             <div class="header-right">
                 <!-- profile users -->
                 <div><img src="../components/image/cart.png" alt=""></div>
-                <div><img src="../components/image/user.png" alt=""></div>
+                <div class="btn-sign">
+                    <button>Sign in</button>
+                    <button>Sign up</button>
+
+                </div>
                 
             </div>
             <!-- ==== -->
@@ -32,12 +36,12 @@
             <div class="middle">
                 <div class="box">
                     <div class="image-pros">
-                        <!-- <img src="../components/image/real madrid.jpg" alt="">  -->
+                        <img src="../components/image/RealMadrid23.png" alt=""> 
                         <!-- image -->
 
                     </div>
                     <div>
-                        <span><a><router-link to="/goshop">Go Shop</router-link></a></span>
+                        <span><a><router-link to="/goshop">SHOP</router-link></a></span>
                     </div>
                 </div>
                 <div class="box">
@@ -45,17 +49,18 @@
                         <!-- image -->
                     </div>
                     <div>
-                        <span><a href="/shoes">SHOES</a></span>
+                        <span><a><router-link to="/shoes">SHOES</router-link></a></span>
                     </div>
                 </div>
                 <div class="box">
                     <div class="image-pros">
                         <!-- image -->
+                        <!-- <img src="../components/image/Bacelona 23.png" alt=""> -->
                         
 
                     </div>
                     <div>
-                        <span><a href="/clothes">CLOTHES</a></span>
+                        <span><a><router-link to="/clothes">CLOTHES</router-link></a></span>
                     </div>
                 </div>
                 <div class="box">
@@ -64,7 +69,9 @@
 
                     </div>
                     <div>
-                        <span><a href="/newDrop">NEW DROP</a></span>
+                        <span><a><router-link to="/newDrop">NEW DROP</router-link></a></span>
+                        
+                        
                     </div>
                 </div>
                 <div class="box">
@@ -73,7 +80,8 @@
 
                     </div>
                     <div>
-                        <span><a href="/accessories">ACCESSORIES</a></span>
+                        <span><a><router-link to="/accessories">ACCESSORIES</router-link></a></span>
+                        
                     </div>
                 </div>
                 <div class="box">
@@ -82,7 +90,9 @@
 
                     </div>
                     <div>
-                        <span><a href="/discount">PROMOTION</a></span>
+                        <span><a><router-link to="/discount">PROMOTION</router-link></a></span>
+
+                        
                     </div>
                 </div>
             </div>
@@ -209,6 +219,22 @@ main .header {
     align-items: center;
     gap: 30px;
 }
+.header-right .btn-sign{
+    width: 200px;
+    height: 50px;
+    background-color: #5452ee;
+    box-sizing: 0.1px 0.1px 2px 1px;
+    color: aliceblue;
+}
+.btn-sign button{
+    background-color: #5452ee;
+    box-sizing: 0.1px 0.1px 2px 1px;
+    color: aliceblue;
+  
+    justify-content: center;
+    align-items: center;
+
+}
 
 main .content {
     background-image: url('../components/image/homeimg.jpg');
@@ -323,7 +349,7 @@ main .body {
     margin-top: 66px;
     display: flex;
     flex-direction: row;
-    object-fit: cover;
+
     
 }
 
@@ -333,6 +359,10 @@ main .body {
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
     border-radius: 22px;
     background-color: aliceblue;
+}
+.image-pros img{
+    width: fit-content;
+    object-fit: contain;
 }
 
 .middle .box>:nth-child(2) {
