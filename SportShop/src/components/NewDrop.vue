@@ -8,15 +8,15 @@
                 </div>
             </div>
             <div class="header-center">
-                <a><router-link to="/">Home</router-link></a>
-                <a><router-link to="/goshop">Shop</router-link></a>
-                <a><router-link to="/">Products</router-link></a>
-                <a><router-link to="/discount">Promotion</router-link></a>
+                <router-link to="/">Home</router-link>
+                <router-link to="/goshop">Shop</router-link>
+                <router-link to="/">Products</router-link>
+                <router-link to="/discount">Promotion</router-link>
             </div>
             <div class="header-right">
                 <!-- profile users -->
                 <div><img src="../components/image/cart.png" alt=""></div>
-                <div><img src="../components/image/user.png" alt=""></div>
+                <!-- <div><img src="../components/image/user.png" alt=""></div> -->
             </div>
             <!-- ==== -->
         </div>

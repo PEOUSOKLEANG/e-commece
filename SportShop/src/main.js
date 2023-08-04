@@ -1,4 +1,10 @@
-// import './assets/main.css' dont open it because have error
+import './assets/main.css' 
+import './assets/selectionpayment.css'
+import './assets/discount.css'
+import './assets/goshop.css'
+import './assets/payment.css'
+
+
 
 import { createApp } from 'vue'
 import App from './App.vue'

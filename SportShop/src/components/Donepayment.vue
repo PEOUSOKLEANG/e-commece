@@ -20,12 +20,26 @@
             </div>
             <!-- ==== -->
         </div>
-        <div class="content">
-            <div class="search">
-                <input type="text" placeholder="Search.... ">
-                <p><strong>10% of All Items Will Donate To Poor People</strong></p>
+        <div class="done-payment">
+            <div class="done">
+                <!-- <div class="header-payment-list">
+
+                </div> -->
+                <header>Payment-information </header>
+                <ul>
+                    <li>Name: Peou sokleang </li>
+                    <li>Sex: Male</li>
+                    <li>Phone number: 096827660</li>
+                    <li>Location:  Phnom Penh </li>
+                    <li>Order Products: Real Madrid Home 2023</li>
+                    <li>Total price: 100$ </li>
+                   
+                </ul>
+                <header style="margin-top:30px ;">Your Order is done</header>
             </div>
+            
         </div>
+       
         <div class="footer">
             <div class="followus">
                 <a href="#">FOLLOW US</a>
@@ -64,3 +78,32 @@
 
     </main>
 </template>
+<style>
+.done-payment{
+   
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+}
+.done header{
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+.done header:hover{
+    color: #5452ee;
+}
+.done ul{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.done ul li{
+    list-style: none;
+    font-size: 20px;
+    margin-left: 20px;
+    
+}
+
+</style>

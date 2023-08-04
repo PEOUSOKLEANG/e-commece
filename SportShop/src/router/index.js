@@ -20,18 +20,6 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: HomeView,
-      method:{
-        goshop(){
-          GoshopView;
-        },
-        promotion(){
-          DiscountView;
-        },
-        Clothes(){
-          ClothesView;
-        },
-
-      }
     },
     {
       path: '/accessories',
@@ -76,6 +64,12 @@ const router = createRouter({
       name: 'payment',
       
       component: () => import('../components/Payment.vue')
+    },
+    {
+      path: '/selectorder/payment/donepaymenet',
+      name: 'donepaayment',
+      
+      component: () => import('../components/Donepayment.vue')
     }
   ]
 })

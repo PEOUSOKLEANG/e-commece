@@ -8,15 +8,15 @@
                 </div>
             </div>
             <div class="header-center">
-                <a><router-link to="/">Home</router-link></a>
-                <a><router-link to="/goshop">Shop</router-link></a>
-                <a><router-link to="/">Products</router-link></a>
-                <a><router-link to="/discount">Promotion</router-link></a>
+                <router-link to="/">Home</router-link>
+                <router-link to="/goshop">Shop</router-link>
+                <router-link to="/">Products</router-link>
+                <router-link to="/discount">Promotion</router-link>
             </div>
             <div class="header-right">
                 <!-- profile users -->
                 <div><img src="../components/image/cart.png" alt=""></div>
-                <div><img src="../components/image/user.png" alt=""></div>
+                <!-- <div><img src="../components/image/user.png" alt=""></div> -->
             </div>
             <!-- ==== -->
         </div>
@@ -37,21 +37,13 @@
                         <option value="">XXL</option>
                     </select>
                     <label for="">Quantity:</label>
-                    <select name="" id="">
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4</option>
-                        <option value="">5</option>
-                        <option value="">6</option>
-                        <option value="">7</option>
-                        <option value="">8</option>
-                        <option value=""></option>
-                    </select>
+                    <div class="quantity">
+                        <input type="Number" min="1" max="10" value="1">
+                    </div>
                     <div class="prices">
                         <label for="">Prices:</label>
                         <span>100$</span>
-                        <button style="margin-top:20px ;">Add to cart</button>
+                        <button style="margin-top:20px ;">Add</button>
                     </div>
                 </div>
             </div>
@@ -66,15 +58,15 @@
                         <label for="">Order:</label>
                     </div>
                     <div>
-                        <input type="text">
-                        <input type="text">
+                        <input type="text" required>
+                        <input type="text" required>
                         <select name="" id="">
                             <option value="">Men</option>
                             <option value="">Women</option>
                         </select>
                     <!-- max-contain -->
                         <input type="text">
-                        <p>RealMadrid Home 23,L,100$</p>
+                        <p>RealMadrid Home 23,L,100$ <a href="">detaials</a></p>
                         <div class="btn-confirm"> 
                             <button @click.prevent="goback()">Cancel</button>
                             <button @click.prevent="payment()">Confirm</button>
@@ -131,131 +123,4 @@ export default{
     }
 }
 </script>
-<style>
-main .mid-order {
-    width: 100%;
-    height:fit-content;
-    display: flex;
-    flex-direction: row;
-    gap: 100px;
-    margin-top: 25px;
-   
-}
-.mid-order .mid-left{
-    background-color:rgb(255, 255, 255);
-    box-shadow:0px 0px 4px 0px ;
-    width:50%;
-    height: 450px;
-    margin-left:50px;
-    display: flex;
-    justify-content: space-between;
 
-    
-}
-.mid-left img{
-    width:300px;
-    height: 400px;
-    object-fit:fit-content;
-}
-.mid-left .mid-left-data{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top:30px ;
-}
-.mid-left-data span, .mid-right span{
-    font-weight: bold;
-    font-size: 30px;
-    display: flex;
-}
-.mid-left-data label{
-    font-size:15px ;
-    font-weight: bold;
-    font-family: sans-serif;
-}
-.mid-left-data select{
-    width: 100px;
-    height: 50px;
-    box-shadow: 0px 0px 4px 0px;
-    border-radius: 10px;
-    outline: none;
-    padding-left: 20px;
-    padding-right: 20px;
-    appearance: none;
-    transition: 0.5;
-    
-
-}
-
-.mid-order .mid-right{
-    background-color:rgb(255, 255, 255);
-    box-shadow:0px 0px 4px 0px ;
-    width:550px;
-    height:450px;
-    display: flex;
-    flex-direction: column;
-    padding-left: 50px;
-    gap: 20px;
-   
-}
-
-.mid-right span {
-    margin-top: 25px;
-    
-}
-form{
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-}
-
-form :nth-child(1),form :nth-child(2){
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-form :nth-child(1) label {
-    height: 40px;
-    /* border:1px solid black ; */
-    font-weight: bold;
-    font-family: sans-serif;
-    justify-content: center;
-   /* align-items: center; */
-   
-}
-
-
-form :nth-child(2) input, form :nth-child(2) select{
-    width: 300px;
-    height: 40px;
-    outline: none;
-    border-radius:10px;
-    /* margin-left: 20px; */
-    padding-left: 20px;
-}
-form :nth-child(2) p{
-    width: fit-content;
-}
-.btn-confirm{
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-}
-.btn-confirm button, .mid-left-data button{
-    height: 40px;
-    width: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    border: none;
-    color: #ffffff;
-    background-color: black;
-    
-}
-.btn-confirm button:hover, .mid-left-data button:hover{
-    background-color: #5452ee;
-    transition: 5ms;
-}
-</style>
